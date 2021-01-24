@@ -1,0 +1,122 @@
+body, html {
+    height: 100%;
+    display: grid;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    display: grid;
+    background: linear-gradient(90deg, hsla(18, 67%, 94%, 1) 0%, hsla(43, 43%, 90%, 1) 99%);}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5vmin;
+}
+
+footer {
+    background-image: url('Assets/bg.png');
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 150px;
+}
+
+#frame {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: #fef5e8;
+    margin: 10%;
+    grid-template-columns:  1fr;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#frame > div {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+main > div {
+    background: #c6e4ce;
+    padding-top: 100%;
+}
+
+#menu {
+     display: none;
+     width: 100%;
+     align-items: center;
+     justify-items: center;
+     padding-bottom: 10px;
+}
+
+button {
+    width: 50%;
+    padding: 1%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#bunZero {
+    background-image: url('Assets/0.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bunOne {
+    background-image: url('Assets/1.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bunTwo {
+    background-image: url('Assets/2.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bunThree {
+    background-image: url('Assets/3.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Totoro {
+    background-image: url('Assets/Totoro.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (max-width: 550px) {
+
+    #frame {
+        margin: 0px;
+        margin-bottom: 10%;
+    }
+
+    footer {
+        background-size: auto 100%;
+        height: 10%;
+    }
+}
+
+@media only screen and (max-height: 550px) {
+
+    #frame {
+        margin: 0px;
+        margin-bottom: 10%;
+    }
+}
