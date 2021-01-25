@@ -46,7 +46,7 @@ main {
     grid-gap: 5px;
 }
 
-main > div {
+main > section {
     background: #c6e4ce;
     padding-top: 100%;
 }
@@ -65,35 +65,35 @@ button {
     font-family: 'Roboto Mono', monospace;
 }
 
-#bunZero {
+.bunZero {
     background-image: url('Assets/0.png');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#bunOne {
+.bunOne {
     background-image: url('Assets/1.png');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#bunTwo {
+.bunTwo {
     background-image: url('Assets/2.png');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#bunThree {
+.bunThree {
     background-image: url('Assets/3.png');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#Totoro {
+.Totoro {
     background-image: url('Assets/Totoro.png');
     background-size: 80%;
     background-repeat: no-repeat;
@@ -110,6 +110,7 @@ button {
     footer {
         background-size: auto 100%;
         height: 10%;
+        display: none;
     }
 }
 
@@ -118,5 +119,9 @@ button {
     #frame {
         margin: 0px;
         margin-bottom: 10%;
+    }
+
+    footer {
+        display: none;
     }
 }
